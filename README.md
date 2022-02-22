@@ -1,2 +1,2 @@
 # video-ingestion-workflow
-### Please see WIKI for documentation
+Please see wiki for documentation
