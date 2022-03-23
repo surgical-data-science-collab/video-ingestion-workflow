@@ -76,6 +76,8 @@ def main():
             "x2" : second x coordinate (xman)
             "y1" : first y coordinate (ymin)
             "y2" : second y coordinate (ymax)
+
+            Either the columns must be named as above, OR must be in the order above
     '''
 
     #read in the ground-truth annotations with the approtriate column names (based on the csv file)
