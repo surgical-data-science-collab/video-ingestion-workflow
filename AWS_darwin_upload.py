@@ -1,11 +1,11 @@
 import requests
 import sys
 
-api_key = "DmEt_0-.ijvbnnYicCjTLntK2R3UQwFGcdIJaSzO"
+api_key = "PUT API KEY HERE"
 
-team_slug = "surgical-data-science-collaborative"
-dataset_slug = "sospine"
-storage_name = "donoholab1"
+team_slug = "PUT DARWIN TEAM NAME HERE"
+dataset_slug = "PUT DATASET NAME HERE"
+storage_name = "PUT AWS BUCKET NAME"
 
 headers = {
     "Content-Type": "application/json",
