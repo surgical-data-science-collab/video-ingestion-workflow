@@ -54,6 +54,10 @@ def main():
     type = sys.argv[1]
 
     print("uploading type: ", type)
+    
+    if(type not in ["batch", "image", "video"]):
+        print("bad type, try again...exiting")
+        exit()
 
     if(type != "batch"):
 
