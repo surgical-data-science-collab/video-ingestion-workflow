@@ -17,6 +17,8 @@ def upload(type, AWS_file_name):
     print("uploading...", AWS_file_name, end=" ")
 
     if(len(AWS_file_name) < 2): exit()
+        
+    display_name = os.path.split(AWS_file_name)[1]
 
     payload = {
         "items": [
@@ -25,7 +27,7 @@ def upload(type, AWS_file_name):
                 # The storage key where the file is stored.
                 "key": AWS_file_name,
                 # This is the display name of the video in the v7 web UI
-                "filename": AWS_file_name,
+                "filename": display_name
             }
         ],
         "storage_name": storage_name
