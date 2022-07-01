@@ -7,7 +7,6 @@ team_slug = "PUT DARWIN TEAM NAME HERE"
 dataset_slug = "PUT DATASET NAME HERE"
 storage_name = "PUT AWS BUCKET NAME"
 
-
 headers = {
     "Content-Type": "application/json",
     "Authorization": f"ApiKey {api_key}"
@@ -88,7 +87,7 @@ def main():
 
             print("uploading...", sys.argv[i], end=" ")
 
-            upload(data_type=data_type, AWS_file_name=sys.argv[i])
+            upload(data_type=data_type, AWS_file_name=sys.argv[i], fps=fps)
 
     elif(data_type == "batch"):
 
@@ -120,6 +119,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 '''
